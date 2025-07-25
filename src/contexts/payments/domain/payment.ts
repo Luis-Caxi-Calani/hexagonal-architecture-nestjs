@@ -20,5 +20,12 @@ export class Payment {
         });
     }
 
+    toValue(): PrimitivePayment {
+        return {
+            id: this.attributes.id,
+            amount: this.attributes.amount,
+            customerId: this.attributes.customerId,
+        };
+    }
     
 }
