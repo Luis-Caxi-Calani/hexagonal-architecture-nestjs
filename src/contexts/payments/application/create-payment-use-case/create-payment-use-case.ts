@@ -2,7 +2,7 @@ import { Payment, PrimitivePayment } from "../../domain/payment";
 import { PaymentRepository } from "../../domain/payment.repository";
 import { CreatePaymentDto } from "./create-payment.dto";
 
-export class createPaymentUseCase {
+export class CreatePaymentUseCase {
     constructor(private paymentRepository: PaymentRepository) {}
 
     async execute(dto: CreatePaymentDto): Promise<{payment: PrimitivePayment}> {
